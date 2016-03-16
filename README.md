@@ -3,7 +3,7 @@
 * To use, 'ruby run_rpn_calculator.rb'. Enter your postfix equation, one number or operator (+, -, * or /) at a time followed by <return>.
 When done, enter 'q' or <ctrl-D>.
 
-An example: "6 4 5 + * 25 2 3 + /" equates to the infix equation of "6*(4+5) - 25/(2+3)" and results in 49.
+* An example: "6 4 5 + * 25 2 3 + /" equates to the infix equation of "6*(4+5) - 25/(2+3)" and results in 49.
 
 * To see more about Reverse Polish notation, check it out [here](https://en.wikipedia.org/wiki/Reverse_Polish_notation).
 
