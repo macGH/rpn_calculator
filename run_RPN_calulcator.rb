@@ -1,16 +1,16 @@
 require './rpn_calculator'
+require 'readline'
 
 puts "Welcome to RPN Calculator"
 puts
-puts "Enter your postfix equation, one number or operator at a time followed by <return>."
-puts "When done, enter 'q' or EOF"
+puts "Enter your postfix equation, one number or operator (+, -, * or /) at a time followed by <return>."
+puts "When done, enter 'q' or ctrl-D"
 puts
 
 equation = []
 loop do
-  p "=> "
-  input = gets.chomp
-  if input.downcase == "q" 
+  input = Readline.readline(">> ")
+  if input.class != String || input.downcase == "q"
     break;
   else
     equation << input
