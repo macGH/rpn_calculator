@@ -36,11 +36,13 @@ class RPNCalculatorTest < Minitest::Test
     good_input_1 = ["12", "3", "-", "3", "/"]
     good_input_2 = ["2", "3", "11", "+", "5", "-","*"]
     good_input_3 = ["6", "4", "5", "+", "*", "25", "2", "3", "+", "/", "-"]
+    good_input_4 = ["-20", "2", "*"]
 
     assert_equal RPNCalculator.do_magic(good_input), -4.0
     assert_equal RPNCalculator.do_magic(good_input_1), 3.0
     assert_equal RPNCalculator.do_magic(good_input_2), 18.0
     assert_equal RPNCalculator.do_magic(good_input_3), 49.0
+    assert_equal RPNCalculator.do_magic(good_input_4), -40.0
   end
 
 end
